@@ -1,0 +1,5 @@
+*.pyc
+*.wav
+test/.ipynb_checkpoints/
+test/archives/.ipynb_checkpoints/
+.ipynb_checkpoints/

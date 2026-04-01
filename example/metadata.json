@@ -1,0 +1,105 @@
+{
+    "config": {
+        "duration": 10,
+        "sr": 32000,
+        "max_event_overlap": 10,
+        "max_event_dur": 10,
+        "ref_db": -55,
+        "foreground_dir": "data/dev_set/sound_event/train",
+        "background_dir": "data/dev_set/noise/train",
+        "interference_dir": "data/dev_set/interference/train",
+        "room_config": {
+            "module": "src.room",
+            "main": "SofaRoom",
+            "args": {
+                "path": "data/dev_set/room_ir/train",
+                "direct_range_ms": [
+                    6,
+                    50
+                ]
+            }
+        },
+        "verbose": true
+    },
+    "fg_events": [
+        {
+            "label": "Dishes",
+            "source_file": "Dishes/50117.wav",
+            "source_time": 0,
+            "event_time": 0.17650344712591295,
+            "event_duration": 1.1953125,
+            "event_position": [
+                [
+                    -0.12238193337490111,
+                    -0.6940624337987426,
+                    0.25651510749425155
+                ]
+            ],
+            "snr": 14.044739145550796,
+            "role": "foreground"
+        },
+        {
+            "label": "MusicalKeyboard",
+            "source_file": "MusicalKeyboard/Y_8/17Mu_0217_124_Y_8_001_split5/17Mu_0217_124_Y_8_001_split5_split0_ch2.wav",
+            "source_time": 0,
+            "event_time": 1.4898943877713187,
+            "event_duration": 3.9946875,
+            "event_position": [
+                [
+                    -0.5398847327947156,
+                    -0.4530170801662902,
+                    -0.25651510749425155
+                ]
+            ],
+            "snr": 19.13809624246309,
+            "role": "foreground"
+        }
+    ],
+    "bg_events": [
+        {
+            "label": null,
+            "source_file": "foa-meir_reverb-s_pid0031_BG.wav",
+            "source_time": 61,
+            "event_time": 0,
+            "event_duration": 10,
+            "event_position": null,
+            "snr": 0,
+            "role": "background"
+        }
+    ],
+    "int_events": [
+        {
+            "label": "Crumpling, crinkling",
+            "source_file": "Crumpling, crinkling/fsd50k_323764.wav",
+            "source_time": 0,
+            "event_time": 2.9195547824553407,
+            "event_duration": 1.5325625,
+            "event_position": [
+                [
+                    1.1490666646784666,
+                    -0.9641814145298093,
+                    0.0
+                ]
+            ],
+            "snr": 7.1613198363188815,
+            "role": "interference"
+        }
+    ],
+    "room": {
+        "module": "src.room",
+        "main": "SofaRoom.from_metadata",
+        "args": {
+            "metadata": {
+                "sofa_path": "data/dev_set/room_ir/train/place203.sofa",
+                "sr": 32000,
+                "nchan": 4,
+                "nrir": 108,
+                "rir_len": 174763,
+                "direct_range_ms": [
+                    6,
+                    50
+                ]
+            }
+        }
+    }
+}
