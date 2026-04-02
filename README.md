@@ -59,8 +59,8 @@ If you use this library and/or the dataset, please cite the following paper:
 @article{yasuda2026dcase,
   title={Description and Discussion on DCASE 2026 Challenge task 4: Spatial Semantic Segmentation of Sound Scenes},
   author={Yasuda, Masahiro and Nguyen, Binh Thien and Harada, Noboru and Serizel, Romain and Mishra, Mayank and Delcroix, Marc and Carlos, Hernandez-Olivan and Araki, Shoko and Takeuchi, Daiki and Nakatani, Tomohiro and Ono, Nobutaka},
-  journal={arXiv preprint arXiv:xxxx.xxxx},
+  journal={arXiv preprint arXiv:2604.00776},
   year={2026},
-  url={https://arxiv.org/pdf/xxxx.xxxx}
+  url={https://arxiv.org/pdf/2604.00776}
 }
 ```
