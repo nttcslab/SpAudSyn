@@ -53,6 +53,9 @@ This example uses data from [*dcase2026_task4_baseline*](https://github.com/nttc
 ln -s path/to/dcase2026_task4_baseline/data path/to/SpAudSyn
 ```
 
+# License 
+This project is licensed under the terms described in [LICENSE.pdf](LICENSE.pdf).
+
 # Citation
 If you use this library and/or the dataset, please cite the following paper:
 ```
